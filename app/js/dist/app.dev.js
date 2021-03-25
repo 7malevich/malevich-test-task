@@ -32,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.swiper-button-prev',
       prevEl: '.swiper-button-next'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction'
     }
   });
   var swiperAbout = new _bundle["default"]('.about-slider-container', {

@@ -67,42 +67,50 @@
 .js-slider-about
    position: relative
    & .about-slider__arrows--left
-      left: 163px
+      left: 209px
 .about__number
    position: absolute
-   bottom: -53px
+   bottom: -50px
    right: 96px
    font-weight: bold
    font-size: 16px
    line-height: 19px
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+   bottom: 23px
+   left: 0
+
 @media screen and ( max-width: 1100px )
    .about__number
       display: fixed
-      bottom: 26px
+      bottom: 29px
       right: 120px
 
 @media screen and ( max-width: 918px )
    .about__number
-      display: fixed
-      bottom: 26px
-      right: 120px
+      bottom: 32px
+      right: 118px
+//@media screen and ( max-width: 809px )
+//   .about__number
+//      bottom: 32px
+//      right: 118px
+
 @media screen and ( max-width: 807px )
    .about__number
-      bottom: 26px
+      bottom: 32px
       right: 105px
 @media screen and ( max-width: 792px )
    .about__number
-      bottom: 26px
+      bottom: 32px
       right: 92px
 
 @media screen and ( max-width: 789px )
    .about__number
-      bottom: 26px
+      bottom: 32px
       right: 99px
 
 @media screen and ( max-width: 779px )
    .about__number
-      bottom: 26px
+      bottom: 32px
       right: 85px
 
 @media screen and ( max-width: 766px )
@@ -116,6 +124,9 @@
       right: 35%
 
 @media screen and ( max-width: 773px )
+   .about__number
+      bottom: 28px
+      right: 35%
    .about__box
       max-width: 100%
 
@@ -136,7 +147,7 @@
 @media screen and ( max-width: 450px )
    .js-slider-about
       & .about-slider__arrows--left
-         left: 106px
+         left: 107px !important
          bottom: -65px
       & .about-slider__arrows--right
          position: absolute

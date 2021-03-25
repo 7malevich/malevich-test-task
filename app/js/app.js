@@ -29,7 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
       navigation: {
          nextEl: '.swiper-button-prev',
          prevEl: '.swiper-button-next'
-       }
+       },
+       pagination: {
+         el: '.swiper-pagination',
+         type: 'fraction',
+      }
+
    })
 
    const swiperAbout = new Swiper('.about-slider-container', {
