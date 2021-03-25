@@ -1,0 +1,44 @@
+.information
+   display: flex
+   justify-content: space-between
+   flex-direction: row-reverse
+   &-catigories
+      &__list
+         font-weight: bold
+         font-size: 24px
+         text-align: right
+         line-height: 29px
+         color: $silver
+         margin-bottom: 20px
+         &:hover
+            color: $black-text
+            border-bottom: 6px solid $electric
+            opacity: .6
+         &.tabs-catigories__list--active
+            color: $black-text
+            border-bottom: 6px solid $electric
+
+.tab
+   display: none
+   &-one
+      //position: relative
+      //&::before
+      //   content: ''
+      //   background-image: url('../img/tab-bg.png')
+      //   width: 1300px
+      //   height: 600px
+      //   position: absolute
+      //   top: 0
+      //   right: 0
+      //   bottom: 0
+      //   left: -147px
+   &.is-active
+      display: block
+      font-weight: bold
+
+.s-information
+   margin-bottom: 50px
+.tabs-catigories__list.is-active
+   font-weight: bold
+   color: #000
+   border-bottom: 6px solid #6d29fe

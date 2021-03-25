@@ -1,0 +1,33 @@
+.decsription
+   display: flex
+   justify-content: space-between
+   &__inner
+      display: flex
+   &__list
+      margin-right: 16px
+      &:first-child
+         min-width: 200px
+      &:last-child
+         margin-right: 0
+   &__item
+      display: flex
+      //flex-direction: column
+      &-num
+         margin-bottom: 36px
+         font-weight: 600
+         font-size: 18px
+         line-height: 21px
+         text-align: right
+         color: $silver
+         width: 210px
+         margin-right: 20px
+         //display: fixed
+         &:last-child
+            margin-bottom: 36px
+      &-decs
+         margin-bottom: 36px
+         font-weight: 600
+         font-size: 18px
+         line-height: 21px
+         text-align: left
+         max-width: 615px

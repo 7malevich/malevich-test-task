@@ -1,0 +1,34 @@
+.section-title {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 38px;
+}
+.section-title--center {
+  text-align: center;
+}
+.section-title--padding {
+  padding-top: 62px;
+}
+
+.teacher__item--hidden {
+  display: none;
+}
+
+.hamburger__bttn {
+  display: none;
+}
+
+.soc {
+  display: flex;
+  align-items: center;
+}
+.soc__list {
+  margin-right: 18px;
+}
+.soc__list:last-child {
+  margin-right: 0;
+}
+.soc__link {
+  display: flex;
+}

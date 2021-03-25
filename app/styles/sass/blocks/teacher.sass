@@ -1,0 +1,92 @@
+.teacher
+   display: flex
+   flex-wrap: wrap
+   justify-content: space-between
+   margin-bottom: 124px
+   &__pagination
+      text-align: center
+      margin-bottom: 186px
+   &__more
+      font-weight: 500
+      font-size: 16px
+      line-height: 28px
+      color: $electric
+      border-bottom: 1px dashed $electric
+      display: inline-block
+      margin-bottom: 15px
+   &__title
+      font-weight: bold
+      font-size: 20px
+      line-height: 28px
+      margin-bottom: 2px
+   &__text
+      font-weight: 300
+      line-height: 28px
+      color: $electric
+   &__item
+      position: relative
+      padding-bottom: 32px
+      &-img
+         margin-bottom: 20px
+         max-width: 298px
+         height: 270px
+         z-index: 5
+      &:nth-child(1n)
+         &::before
+            content: ''
+            width: 298px
+            height: 270px
+            border: 1px solid $black
+            position: absolute
+            top: 10px
+            left: 12px
+            z-index: -1
+      &:nth-child(2n)
+         &::before
+            content: ''
+            width: 298px
+            height: 270px
+            border: 1px solid $electric
+            position: absolute
+            top: 10px
+            left: 12px
+            z-index: -1
+      &:nth-child(3n)
+         &::before
+            content: ''
+            width: 298px
+            height: 270px
+            border: 1px solid $screamin
+            position: absolute
+            top: 10px
+            left: 12px
+            z-index: -1
+
+      &-img
+         margin-bottom: 20px
+         max-width: 298px
+         height: 270px
+         z-index: 5
+
+@media only screen and (max-width: 1140px)
+   .s-teacher::before
+      //content: ''
+      //background-image: url(../img/teacher-bg.png)
+      width: 567px
+@media only screen and (max-width: 470px)
+   .s-teacher::before
+      width: 320px
+//.s-teacher
+//   position: relative
+//   &::before
+//      content: ''
+//      background-image: url('../img/teacher-bg.png')
+//      width: 1050px
+//      height: 480px
+//      position: absolute
+//      top: 19px
+//      right: 100px
+//      bottom: 0
+//      left: 132px
+
+      //transform: translateX(-100px)

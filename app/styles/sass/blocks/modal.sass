@@ -1,0 +1,60 @@
+.modal
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100vh
+   background: $mercury
+   z-index: 15
+   display: flex
+   justify-content: center
+   flex-direction: column
+   align-items: center
+
+   display: none
+   &.show
+      display: flex
+
+   &__close
+      border: none
+      background: none
+      outline: none
+      position: absolute
+      bottom: 24px
+      right: 50%
+      left: 50%
+      padding: 0
+      cursor: pointer
+      transition: transform .2s linear
+      &:hover
+         transform: rotate(90deg)
+         opacity: .5
+   &__content
+      padding: 36px 16px 24px 16px
+      position: relative
+      max-width: 374px
+      height: 486px
+      opacity: 0
+      background: $white
+      z-index: 11
+      transform: translateY(-50px)
+      transition: transform 200ms linear, opacity 200ms linear
+      &.text-suptitle
+         text-align: left
+
+   &__form
+      display: flex
+      flex-direction: column
+   &__mail
+      &.baner__mail
+         width: 342px
+         margin-bottom: 15px
+   &__title
+      margin-bottom: 18px
+@media screen and ( max-width: 400px )
+   .modal__content
+      max-width: 308px
+   .section-title
+      font-size: 23px
+   .modal__mail.baner__mail
+      width: 273px

@@ -1,0 +1,55 @@
+.burger
+
+   display: none
+   //visibility: hidden
+   cursor: pointer
+   outline: none
+   background: none
+   border: none
+   position: absolute
+   font-size: 0
+   color: transparent
+   width: 18px
+   height: 16px
+   top: 36px
+   left: 24px
+   transform: translateY(-50%)
+   &::after,
+   &::before,
+   span
+      display: block
+      width: 100%
+      height: 1px
+      background-color: $black
+      position: absolute
+      left: 0
+   &::after,
+   &::before
+      transition: transform .2.5s linear
+   &::before
+      content: ''
+      top: 0
+   &::after
+      content: ''
+      bottom: 0
+   span
+      top: 50%
+      transform: translateY(-50%)
+      height: 1px
+      transform: opacity .2s linear
+   .show-burger &
+      z-index: 10
+
+      span
+         opacity: 0
+      &::before
+         transform: rotate(45deg)
+      &::after
+         transform: rotate(-45deg)
+      &::before,
+      &::after
+         top: 45px
+      &.burger--close
+         position: absolute
+         right: 0
+         top: 0
